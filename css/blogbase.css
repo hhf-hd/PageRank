@@ -1,0 +1,25 @@
+#nav{width:100%;background:#666666;color:#FFFFFF; font-family:黑体;
+ text-align:center; font-size:20px; font-weight:bold;} 
+#nav a {border-left:#CCCCCC 2px solid; display:inline-block;
+ height:40px; line-height:40px; padding:0px 25px; margin-left:-8px;} 
+#nav a:link{ text-decoration:none; color:blue;} 
+#nav a:visited{text-decoration:none; color:white;}
+#nav a:hover { background:#10000;color:red;}
+#nav a:active{text-decoration:underline; color:red;}
+.copyright{width:100%;margin:0 auto;height:35px;line-height:35px;background-color:#666666;text-align:center;}
+.blogtitle_decorate {font-family:Palatino Linotype;font-size:33px;color:#000000;text-align:center;}
+.descrption_title{text-align:center;font-family:Times New Roman;}
+body{background-color:#e8e8e8;font-family:"Microsoft yahei";width:1313px;}
+
+#header_blank{width:100%;margin:0 auto;height:25px;background-color:#e8e8e8;}
+#header{width:100%;margin:0 auto;height:110px;background-color:#e8e8e8;}
+
+#main{width:100%;margin:0 auto;background-color:#e8e8e8;overflow:hidden;position:relative;height:1300px;}
+  .declaration .recordbylanguage.recordbytime .recommendarticle .personalessay .addressandemail{padding-right:5px;width:220px;height:20px;}
+  .recommendarticle a{target:blank;}
+#mainbody{background-color:white;width:855px;float:right;padding-left:10px;margin-left:50px;height:93%;margin-top:10px;}
+  #mainbody a:link,a:visited,a:active{ text-decoration:none; color:blue;}
+  .bolgtitle{font-size:20px;color:#546b83;}
+  .blogbrief{margin-left:5px;}
+.footer{clear:both;}
+#exercise{background-color:red; margin-top:10px;margin-left:10px;}
