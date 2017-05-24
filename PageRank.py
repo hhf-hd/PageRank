@@ -105,11 +105,11 @@ def Get_Graph(Key_Words):
 
 if __name__ == '__main__':
 	
-	Node_List=[]
-	Edge_List = []
-	Key_Words = sys.argv[1]
+	Node_List=[]		 
+	Edge_List = []		 
+	Key_Words = sys.argv[1]  #get parameter from PageRank.php
 	#print Key_Words
-	Node_List,Edge_List=Get_Graph(Key_Words)
+	Node_List,Edge_List=Get_Graph(Key_Words)  #get the node and the edge of the node
 	#print Node_List,Edge_List
 	dg = digraph()
 	dg.add_nodes(Node_List)
