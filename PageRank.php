@@ -26,7 +26,7 @@
 		//echo $Key_Words."<br>";
         	$Para = array();
 		$cmd = 'python PageRank.py  '.$Key_Words;
-        	exec($cmd, $Para,$ret);
+        	exec($cmd, $Para,$ret);		//execute the python script ,renturn ranked url_list 
 		$Len = count($Para);
 		$i = 1;
 		foreach ($Para as $url)
@@ -34,14 +34,14 @@
 			$Title =array();
 			$CMD = 'python Loadhtml.py '.$url.' '.$Key_Words;
 			$Key_Len = strlen($Key_Words);
-			exec($CMD,$Title,$ret);
+			exec($CMD,$Title,$ret);		//return title and the sentance that involved the key_word
 			echo "<div><a style='font-size:28px; font-family:KaiTi;'; href= $url>$Title[0]</a><div>";
 			echo "<p>   <p>";
-			$Str = strchr($Title[1],$Key_Words,true);
+			$Str = strchr($Title[1],$Key_Words,true); //the string before the key_word
 			echo $Str;
-			echo "<span style= 'color:red';>$Key_Words</span>";
+			echo "<span style= 'color:red';>$Key_Words</span>"; 		//highlight the key_word
 			$Str2 = strstr($Title[1],$Key_Words);
-			$Str2 = substr($Str2,$Key_Len);
+			$Str2 = substr($Str2,$Key_Len);		//the string after the key_word
 			echo "$Str2 .....  <a href= $url>more</a>";
 			echo "<HR style='FILTER: alpha(opacity=100,finishopacity=0,style=2)' width='100%' color=#987cb9 SIZE=10>";
 			
