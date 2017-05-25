@@ -71,7 +71,7 @@ def Get_Graph(Key_Words):
 	soup = BeautifulSoup(Page,"html.parser")
 	for Link in soup.find_all('a'):
 		Link_Url = Link.get("href")
-		#print "1111111",Link_Url
+		
 		Url_List.append(Link_Url)
 	#start page to his link
 	for Link_Url in Url_List:
@@ -79,11 +79,11 @@ def Get_Graph(Key_Words):
 		if Is_Key_Words_In(Link_Url,Key_Words) and Is_Key_Words_In(url,Key_Words):
 			node = Get_Node(Link_Url)
 			Eage_List.append((node1,node))
-			#print Eage_List
+			
 
 	#start from Url_List
 	for Link_Url in Url_List:
-		#print "222222",Link_Url
+		
 		if Is_Key_Words_In(Link_Url,Key_Words):
 			node = Get_Node(Link_Url)
 			Node_List.append(node)
@@ -92,7 +92,7 @@ def Get_Graph(Key_Words):
 		soup = BeautifulSoup(Page,"html.parser")
 		for Link in soup.find_all('a'):
 			href = Link.get("href")
-			#print "3333333",href
+			
 			if (href in Url_List)==False and href!=url:
 				Url_List.append(href)
 				#print "add"
